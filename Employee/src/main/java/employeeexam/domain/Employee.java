@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
+import org.springframework.context.ApplicationContext;
 
 @Entity
 @Table(name = "Employee_table")
@@ -36,9 +37,12 @@ public class Employee {
     }
 
     public static EmployeeRepository repository() {
-        EmployeeRepository employeeRepository = EmployeeApplication.applicationContext.getBean(
-            EmployeeRepository.class
-        );
+        EmployeeRepository employeeRepository = applicationContext()
+            .getBean(EmployeeRepository.class);
         return employeeRepository;
+    }
+
+    public static ApplicationContext applicationContext() {
+        return EmployeeApplication.applicationContext;
     }
 }

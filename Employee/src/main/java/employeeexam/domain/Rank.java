@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
+import org.springframework.context.ApplicationContext;
 
 @Entity
 @Table(name = "Rank_table")
@@ -25,9 +26,12 @@ public class Rank {
     }
 
     public static RankRepository repository() {
-        RankRepository rankRepository = EmployeeApplication.applicationContext.getBean(
-            RankRepository.class
-        );
+        RankRepository rankRepository = applicationContext()
+            .getBean(RankRepository.class);
         return rankRepository;
+    }
+
+    public static ApplicationContext applicationContext() {
+        return EmployeeApplication.applicationContext;
     }
 }
