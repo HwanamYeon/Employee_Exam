@@ -72,6 +72,7 @@
                     { text: "rankId", value: "rankId" },
                     { text: "departmentId", value: "departmentId" },
                     { text: "employeeUser", value: "employeeUser" },
+                    { text: "employeeUser", value: "employeeUser" },
                 ],
             employee : [],
             newValue: {},
@@ -94,6 +95,7 @@
                 'rankId': {},
                 'departmentId': {},
                 'employeeUser': [],
+                'employeeUser': {},
             }
         },
         methods: {
