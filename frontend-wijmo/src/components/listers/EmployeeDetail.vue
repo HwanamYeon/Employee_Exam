@@ -15,6 +15,7 @@
             <DepartmentId offline label="DepartmentId" v-model="item.departmentId" :editMode="false" :key="false" @change="change" />
             <EmployeeUserManager offline label="EmployeeUser" v-model="item.employeeUser" :editMode="false" @change="change" />
             <EmployeeUser offline label="EmployeeUser" v-model="item.employeeUser" :editMode="false" @change="change" />
+            <EmployeeUser offline label="EmployeeUser" v-model="item.employeeUser" :editMode="false" @change="change" />
         </v-card-text>
 
         <v-card-actions>

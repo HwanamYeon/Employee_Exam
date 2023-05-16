@@ -16,5 +16,5 @@ public class EmployeeUser {
 
     private Date joinDate;
 
-    private Boolean isManager;
+    private Boolean isAdmin;
 }

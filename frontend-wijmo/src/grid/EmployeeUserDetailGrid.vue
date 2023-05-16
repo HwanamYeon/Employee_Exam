@@ -16,7 +16,7 @@
         <wj-flex-grid-column binding="index" header="Number" width="2*" :isReadOnly="true" align="center" />
         <wj-flex-grid-column binding="phoneNumber" header="phoneNumber" width="2*" :isReadOnly="true" align="center" />
         <wj-flex-grid-column binding="joinDate" header="joinDate" width="2*" :isReadOnly="true" align="center" />
-        <wj-flex-grid-column binding="isManager" header="isManager" width="2*" :isReadOnly="true" align="center" />
+        <wj-flex-grid-column binding="isAdmin" header="isAdmin" width="2*" :isReadOnly="true" align="center" />
     </wj-flex-grid>
 </template>
 

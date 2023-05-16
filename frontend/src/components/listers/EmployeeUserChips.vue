@@ -14,7 +14,7 @@
                         <v-list-item-subtitle>
                             PhoneNumber :  {{item.phoneNumber }} <br>
                             JoinDate :  {{item.joinDate }} <br>
-                            IsManager :  {{item.isManager }} <br>
+                            IsAdmin :  {{item.isAdmin }} <br>
                         </v-list-item-subtitle>
                     </v-list-item-content>
                     <v-list-item-action v-if="editMode">

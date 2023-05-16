@@ -30,7 +30,7 @@
             :selectionChanged="onSelectionChanged"
             style="margin-top:10px; max-height:65vh;"
         >
-            <wj-flex-grid-filter :filterColumns="['userName','userId','rankId','departmentId','employeeUser','employeeUser',]" />
+            <wj-flex-grid-filter :filterColumns="['userName','userId','rankId','departmentId','employeeUser','employeeUser','employeeUser',]" />
             <wj-flex-grid-column binding="index" header="Number" width="2*" :isReadOnly="true" align="center" />
             <wj-flex-grid-column binding="employeeUser[0].name" header="employeeUser" width="2*" :isReadOnly="true" align="center" />
             <wj-flex-grid-column binding="userName" header="userName" width="2*" :isReadOnly="true" align="center" />

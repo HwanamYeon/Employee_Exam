@@ -23,6 +23,7 @@
             <DepartmentId offline label="DepartmentId" v-model="value.departmentId" :editMode="editMode" @change="change"/>
             <EmployeeUserManager offline label="EmployeeUser" v-model="value.employeeUser" :editMode="editMode" @change="change"/>
             <EmployeeUser offline label="EmployeeUser" v-model="value.employeeUser" :editMode="editMode" @change="change"/>
+            <EmployeeUser offline label="EmployeeUser" v-model="value.employeeUser" :editMode="editMode" @change="change"/>
         </v-card-text>
 
         <v-card-actions>
@@ -83,10 +84,12 @@
     const axios = require('axios').default;
 
     import EmployeeUser from './vo/EmployeeUser.vue';
+    import EmployeeUser from './vo/EmployeeUser.vue';
 
     export default {
         name: 'Employee',
         components:{
+            EmployeeUser,
             EmployeeUser,
         },
         props: {

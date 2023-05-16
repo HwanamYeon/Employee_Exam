@@ -8,7 +8,7 @@
         <v-card-text>
             <String label="PhoneNumber" v-model="value.phoneNumber" :editMode="editMode"/>
             <Date label="JoinDate" v-model="value.joinDate" :editMode="editMode"/>
-            <Boolean label="IsManager" v-model="value.isManager" :editMode="editMode"/>
+            <Boolean label="IsAdmin" v-model="value.isAdmin" :editMode="editMode"/>
         </v-card-text>
 
         <v-card-actions v-if="inList">
@@ -37,7 +37,7 @@
                 this.newValue = {
                     'phoneNumber': '',
                     'joinDate': '',
-                    'isManager': '',
+                    'isAdmin': '',
                 }
             }
             if(typeof this.value === 'object') {
@@ -47,8 +47,8 @@
                 if(!('joinDate' in this.value)) {
                     this.value.joinDate = '2023-05-16';
                 }
-                if(!('isManager' in this.value)) {
-                    this.value.isManager = false;
+                if(!('isAdmin' in this.value)) {
+                    this.value.isAdmin = false;
                 }
             }
         },
