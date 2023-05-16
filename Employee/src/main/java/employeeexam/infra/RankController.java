@@ -17,4 +17,9 @@ public class RankController {
 
     @Autowired
     RankRepository rankRepository;
+
+    @PutMapping("/ranks/search/findByName")
+    public Object findByName(@RequestBody RankViewQuery query) {
+        return rankRepository.findByName(query.getFindByName());
+    }
 }

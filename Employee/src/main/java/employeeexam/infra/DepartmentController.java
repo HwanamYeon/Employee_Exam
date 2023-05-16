@@ -17,4 +17,9 @@ public class DepartmentController {
 
     @Autowired
     DepartmentRepository departmentRepository;
+
+    @PutMapping("/departments/search/findByName")
+    public Object findByName(@RequestBody DepartmentViewQuery query) {
+        return departmentRepository.findByName(query.getName());
+    }
 }

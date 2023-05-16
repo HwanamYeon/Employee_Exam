@@ -14,7 +14,7 @@ docker-compose up
 cd kafka
 docker-compose exec -it kafka /bin/bash
 cd /bin
-./kafka-console-consumer --bootstrap-server localhost:9092 --topic
+./kafka-console-consumer --bootstrap-server localhost:9092 --isolation-level read_committed --topic
 ```
 
 ## Run the backend micro-services
@@ -32,7 +32,7 @@ mvn spring-boot:run
 ## Test by API
 - Employee
 ```
- http :8088/employees id="id" userName="userName" userId="userId" rankId="rankId" departmentId="departmentId" employeeUser="employeeUser" 
+ http :8088/employees id="id" userName="userName" userId="userId" rankId="rankId" departmentId="departmentId" employeeUser="employeeUser" employeeUser="employeeUser" employeeUser="employeeUser" 
  http :8088/ranks id="id" name="name" 
  http :8088/departments id="id" name="name" 
 ```
